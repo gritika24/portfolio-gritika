@@ -1,0 +1,159 @@
+:root {
+  --bg: #1f1f1f;
+  --panel: #262626;
+  --muted: #bdbdbd;
+  --accent: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", "Helvetica";
+  background: var(--bg);
+  color: var(--accent);
+}
+
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 40;
+}
+
+.brand {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* HERO SECTION */
+.hero-wrap {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-panel {
+  background: var(--panel);
+  padding: 150px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tagline {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.12);
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+.hero-panel h1 {
+  font-size: 96px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.lead {
+  color: var(--muted);
+  margin-top: 20px;
+  max-width: 520px;
+}
+
+
+.cta-row {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn1 {
+  background: white;
+  color: #111;
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+section {
+  padding: 120px 80px;
+}
+
+.white {
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel {
+    padding: 60px 30px;
+  }
+
+  .hero-panel h1 {
+    font-size: 48px;
+  }
+
+  nav a {
+    margin-left: 14px;
+  }
+}
+.weather img {
+  width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+.video-container {
+  width: 600px;
+  margin: auto;
+  float: left;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+}
+
+
